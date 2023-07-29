@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="logo" href="data:image/jpeg;base64,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">
+
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      
+      
+        .Footer{
+            padding: 30px;
+          background-color: rgb(168, 168, 213);
+          clear: both;
+          font-size: x-large;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          text-align: center;
+        }
+        
+        .Header {
+          padding: 10px;
+          text-align: center;
+          background-color: rgb(242, 242, 242);
+          font-size: larger;
+        }
+        row ::after{
+            content :"";
+            clear:both ;
+            display: table;
+
+        }
+        [class *="col-"]{
+            float: left;
+            padding: 15px;
+            border: 1px solid;
+        }
+        .col-1{width:8.33% ;}
+        .col2{width:16.66 ;}
+        .col-3{width:25%;}
+        .col-4{width:33.33;}
+        .col-5{width:41.66 ;}
+        .col-6{width:50% ;}
+        .col-7{width:58.33% ;}
+        .col-8{width:64.66 ;}
+        .col-9{width:75%;}
+        .col-10{width:83.33% ;}
+        .col-11{width:91.66% ;}
+        .col-12{width:100% ;}
+        @media screen  and ( max-width : 768px ) {
+            [class*="col-"]{
+              width: 100%;
+            }
+        }    
+       .col-3 {
+              text-align: center;
+       }
+        
+        .logo{
+            float: left;
+            width: 120px;
+            height: 100px;
+        }
+        .col-6{
+            text-align: center;
+         color: rgb(3, 3, 75);
+          
+        }
+        .navbar {
+  width: 100%;
+  background-color:rgb(26, 27, 25);
+  overflow: auto;
+}
+.navbar a:hover {
+  background-color:rgb(149, 149, 211);
+}
+
+.active {
+  background-color:444;
+}
+        .navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration:none;
+  font-size: 17px;
+}
+.navbar input[ type="text"] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+       
+        
+    </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+            <input type="text" placeholder="Search..">
+            
+          </div>
+    <div class="Header">
+        
+    <h1 style="color: rgb(51, 25, 220);"><SPan style="color: rgb(37, 9, 113); font-size:larger;">W</SPan>ATCH <span style="color:rgb(37, 9, 113); font-size:larger;">H</span>OUSE</h1>
+    <img src="https://media.istockphoto.com/id/1430084762/photo/high-end-golden-watches-shop.webp?b=1&s=612x612&w=0&k=20&c=m-WmzW_WiI9-h_nM9HJBYBaeTiBsJIZz_GLx0l7VwsA="  alt="">
+        <div class="col-6">
+            <p> 30% off on this fantastic summer</p>
+            <h1>COLLECTIONS!!</h1>
+            <p >Enhance the visual impression of your face to multiple levels. Compare our styles on various faces- Quality Promised.</p>
+            <button type="submit" class="btn btn-primary" style="font-size: larger;">Shop now !</button>
+        </div>
+     </div>
+    <div class="row">
+       <div class="col-3 menu">
+        <i class="fa fa-truck" aria-hidden="true"></i>
+        <h2 >Free shipping</h2>
+        <p>Enjoy free shipping on all
+
+           any kind of your orders.</p>
+       </div>
+       <div class="col-3">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <h2 >24/7 Support</h2>
+        <p>Reach out to us anytime, We are at your </p>
+        </div>
+       <div class="col-3 right" >
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        <h2>Offer Card</h2>
+        <p>Enjoy discounts using our offer cards and coupon codes.</p>
+       </div>
+       <div class="col-3 right1">
+        <i class="fa fa-credit-card" aria-hidden="true"></i>
+      <h2>Secure payment</h2> 
+      <p>We provide secure payment gateways for your transactions.</p>
+    </div>
+     </div>
+     <div class="row">
+     <div class="col-4">
+      <h2 style="color: rgb(162, 57, 57);">MENS COLLECTIONS</h2>
+      <a href="file:///C:/Users/Sai/OneDrive/Desktop/front%20end/long%20term%20Project/mens%20colections.html" target="_blank"><button type="submit" class="btn btn-info" style="font-size: larger;">Shop now !</button></a>
+     <a href="file:///C:/Users/Sai/OneDrive/Desktop/front%20end/long%20term%20Project/mens%20colections.html" target="_blank"><img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?auto=compress&cs=tinysrgb&w=600" width="500px" height="450px" alt=""></a>
+    </div>
+    <div class="col-4">
+      <h2 style="color: rgb(162, 57, 57);"> LATEST COLLECTIONS</h2>
+      <a href="file:///C:/Users/Sai/OneDrive/Desktop/front%20end/long%20term%20Project/latest%20collections.html" target="_blank"><button type="submit" class="btn btn-info" style="font-size: larger;">Shop now !</button></a>
+     <a href="file:///C:/Users/Sai/OneDrive/Desktop/front%20end/long%20term%20Project/latest%20collections.html" target="_blank"><img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600" width="500px" height="450px" alt=""></a>
+    </div>
+    <br>
+    <div class="col-4">
+      <h2 style="color: rgb(162, 57, 57);">LADIES  COLLECTIONS</h2>
+      <a href="file:///C:/Users/Sai/OneDrive/Desktop/front%20end/long%20term%20Project/ladies%20collections.html" target="_blank"><button type="submit" class="btn btn-info" style="font-size: larger;">Shop now !</button></a>
+       <a href="file:///C:/Users/Sai/OneDrive/Desktop/front%20end/long%20term%20Project/ladies%20collections.html" target="_blank"><img src="https://cdn.pixabay.com/photo/2013/06/21/21/13/watch-140487_640.jpg" width="" height="450px" alt=""></a>
+    </div>
+    
+    </div>
+    
+
+    </div>
+    <div class="Footer">
+        <i class="fa fa-envelope" aria-hidden="true">Join The Community To Be Updated Firstly ?</i>
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-home" aria-hidden="true"> </i>
+                    <h3>Contact us</h3>
+                    <p>123456789</p>   
+            </div>
+            <div class="col-3">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h3>Adress</h3>
+                    <p>113/ vishakapatnam india</p>   
+            </div>
+            <div class="col-3">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h3>e-mail</h3>
+                    <p>infoshoestore@gmail.com</p>   
+            </div>
+            <div class="col-3">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>Follow us on Facebook,twitter,instagram</p>
+             
+              <h3>follow us on <a href="https://www.instagram.com/" target="_blank" ><i class="fa fa-instagram"></i></a> <i class="fa fa-linkedin"></i></h3>
+             </div>
+    <h3>follow us on <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a> <i class="fa fa-linkedin"></i></h3>
+    <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="#" class="google"><i class="fa fa-google"></i></a> 
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+    </div>
+
+    
+</body>
+</html>
